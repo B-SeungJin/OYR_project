@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>joinForm</title>
+    <link rel="stylesheet" href="joinForm.css">
+</head>
+<body>
+    <section class="form">
+        <div class="category">
+            <div class="swim">수영</div>
+            <div class="hiking">등산</div>
+            <div class="golf">골프</div>
+            <div class="book">독서</div>
+            <div class="bike">자전거</div>
+        </div>
+        <div class="joinForm">
+            <h2>정보입력</h2>
+            <form action="#" accept-charset="utf-8" id="join_info" method="get">
+                <h3>제목:</h3> <input type="text" name="title" required/><br><br>
+                <h3>소개:</h3> <textarea name="comment" cols="30" rows="4"
+                placeholder="간략한 소개를 남겨주세요"></textarea>
+                <h3>지역:</h3> <select name="city" size="5" multiple>
+                    <option value="gangnam_gu">강남구</option>
+                    <option value="gwangjin-gu">광진구</option>
+                    <option value="dongdaemun-gu">동대문구</option>
+                    <option value="seocho-gu">서초구</option>
+                    <option value="yongsan-gu">용산구</option>
+                </select>
+                <h3>모집인원:</h3> <input type="number" min="1" max="100" name="number">
+                <h3>모집일자:</h3> <input type="date" min="2023-01-01" max="2024-12-31" name="date">
+                <h3>모집 마감일:</h3> <input type="date" min="2023-01-01" max="2024-12-31" name="date">
+                <input type="submit" value="submit"/>
+                <input type="reset" value="reset"/><br><br>
+            </form>
+        </div>
+        
+        <div class="imgUpload">
+            <input type="text" class="upload-name" 
+            value="이미지를 업로드 하세요" placeholder="이미지를 업로드 하세요" disabled>
+            <label for="upload-file">파일선택</label>
+            <input type="file" id="upload-file">
+          </div>
+    </section>
+</body>
+</html>
